@@ -2,13 +2,14 @@
 
 :root{
     --champagne: rgb(244, 242, 232);
-    --space-cadet: #2E294E;
-    --darkest: #1c1931;
+    --space-cadet: #002D62;
+    --darkest: #00162d;
 }
 
 .main-banner{
     background-color: var(--champagne) !important;
     font-family: 'Lora', serif;
+    padding-bottom: 0 !important;
 }
 
 .aero-bg{
@@ -21,4 +22,8 @@ footer{
     position:sticky;
     padding: 0.001rem;
     font-family: 'Lora', serif;
+}
+
+#profile-picture{
+    height: 45vw;
 }
