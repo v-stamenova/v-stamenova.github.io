@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&family=Open+Sans&display=swap');
+
+:root{
+    --champagne: rgb(244, 242, 232);
+    --space-cadet: #2E294E;
+    --darkest: #1c1931;
+}
+
+.main-banner{
+    background-color: var(--champagne) !important;
+    font-family: 'Lora', serif;
+}
+
+.aero-bg{
+    background-color:  var(--space-cadet) !important;
+    font-family: 'Open Sans', sans-serif;
+}
+
+footer{
+    background-color: var(--darkest);
+    position:sticky;
+    padding: 0.001rem;
+    font-family: 'Lora', serif;
+}
