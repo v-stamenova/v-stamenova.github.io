@@ -26,4 +26,30 @@ footer{
 
 #profile-picture{
     height: 45vw;
+    z-index: -1 !important;
+}
+
+header{
+    z-index: 300 !important;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+nav{
+    position: fixed !important;
+    top: 0 !important;
+    width: 100%;
+    background-color: white;
+}
+
+.personal-details label,
+.personal-details p{
+    display: inline;
+    font-size: 25px;
+}
+
+.personal-details p{
+    margin-left: 10px;
 }
