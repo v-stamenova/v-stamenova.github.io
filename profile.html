@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="styles/style.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <title>My profile</title>
@@ -13,35 +13,42 @@
 
 <body class="aero-bg">
   <header>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="#">VS</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+    <nav style="position: sticky" class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
           <li class="nav-item active">
-            <a class="nav-link" href="#">Home</a>
+            <a class="nav-link" href="profile.html">Profile</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="dashboard.html">Dashboard</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="faq.html">FAQ</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="blog.html">Blog</a>
           </li>
         </ul>
       </div>
     </nav>
   </header>
   <main>
-    <div class="jumbotron jumbotron-fluid main-banner">
+    <article class="jumbotron jumbotron-fluid main-banner">
       <div class="container">
         <div class="row">
           <div class="col-6">
-            <h1 class="display-1 my-5">Valeria Stamenova</h1>
+            <h1 class="display-1 py-5" id="name">Valeria Stamenova</h1>
           </div>
-          <div class="col-6" id="profile">
-            <img id="profile-picture" src="second-profile.png" alt="Profile picture">
+          <div class="col-6">
+            <img id="profile-picture" src="images/new-picture.png" alt="Profile picture">
           </div>
         </div>
       </div>
-    </div>
-    <div class="jumbotron jumbotron-fluid aero-bg text-white">
+    </article>
+    <article class="jumbotron jumbotron-fluid aero-bg text-white">
       <div class="container">
         <div class="row py-2">
           <div class="col">
@@ -58,28 +65,13 @@
           </div>
         </div>
       </div>
-    </div>
+    </article>
   </main>
   <footer>
     <div class="text-white container">
       <p class="py-3">VS © 2022</p>
     </div>
   </footer>
-  <!-- <div class="bg-primary">
-    <h1>Personal information</h1>
-    <p>Name: Valeria Mincheva Stamenova</p>
-    <p>Age: 18 year</p>
-    <p>Profiles: 2017-2022: Computer Science, ICT, Math <br> 2014-2017: Math</p>
-  </div>
-  <div>
-    <h2>Extra-curricular activities</h1>
-      <p>
-        Currently I am not planning to work during the first half of my first year . I hope that I can find at some
-        point some internship ( could be without payment ) just to get some experience and learn new things . I like to
-        spend time with friends and going for walks so probably in my free time I'll try to socialize more and learn
-        things that could be beneficial for my future .
-      </p>
-  </div> -->
 </body>
 
 </html>
