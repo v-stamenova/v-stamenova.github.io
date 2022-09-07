@@ -4,6 +4,7 @@
     --champagne: rgb(244, 242, 232);
     --space-cadet: #002D62;
     --darkest: #00162d;
+    --aero: #6BBAEC;
 }
 
 .main-banner{
@@ -14,7 +15,17 @@
 
 .aero-bg{
     background-color:  var(--space-cadet) !important;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Lora', serif;
+}
+
+.light-blue-bg{
+    background-color:  var(--aero) !important;
+    font-family: 'Lora', serif;
+}
+
+.light-blue-bg p{
+    font-size: 21px;
+    color: var(--darkest)
 }
 
 .champ-bg{
@@ -121,8 +132,13 @@ nav{
     padding-top: 5rem;
   }
 
-  .list-group-item{
+  .list-group-item-champ{
     background-color: var(--champagne) !important;
+    font-size: 19px;
+  }
+
+  .list-group-item-space{
+    background-color: var(--space-cadet) !important;
     font-size: 19px;
   }
 
@@ -148,7 +164,7 @@ article#banner{
     background-image: url('/images/banner-b.png') !important;
 }
 
-#teaching{
+.div-pic{
     max-width: 100%;
     max-height: 100%;
 }
