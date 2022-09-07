@@ -17,6 +17,10 @@
     font-family: 'Open Sans', sans-serif;
 }
 
+.champ-bg{
+    background-color: var(--champagne) !important;
+}
+
 .darkest-text{
     color: var(--darkest) !important;
 }
@@ -89,3 +93,66 @@ nav{
     transform: scaleX(1);
     transform-origin: bottom left;
   }
+
+  .underline-light {
+    display: inline-block;
+    position: relative;
+    color: var(--champagne);
+  }
+  
+  .underline-light:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--champagne);
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  
+  .underline-light:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+  .big-padding-top{
+    padding-top: 5rem;
+  }
+
+  .list-group-item{
+    background-color: var(--champagne) !important;
+    font-size: 19px;
+  }
+
+  .no-link-feature:hover{
+    text-decoration: none !important;
+    color: var(--space-cadet) !important;
+    font-family: 'Lora', serif;
+  }
+
+.light-link{
+    color: var(--champagne) !important;
+}
+
+.light-link:hover{
+    color: white !important;
+}
+
+#banner{
+    padding-top: 0;
+}
+
+article#banner{
+    background-image: url('/images/banner-b.png') !important;
+}
+
+#teaching{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.med-par{
+    font-size: 20px;
+}
