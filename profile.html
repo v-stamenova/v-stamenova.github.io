@@ -8,29 +8,30 @@
   <link rel="stylesheet" href="styles/style.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
   <title>My profile</title>
 </head>
 
-<body class="aero-bg">
+<body class="aero-bg no-bottom-margin">
   <header class="sticky">
     <nav class="navbar sticky navbar-expand-lg navbar-light bg-light">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link" href="index.html">Home</a>
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="profile.html">Profile</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="dashboard.html">Dashboard</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="faq.html">FAQ</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="blog.html">Blog</a>
-          </li>
-        </ul>
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link underline" href="index.html">Home</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="profile.html">Profile</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link underline" href="dashboard.html">Dashboard</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link underline" href="faq.html">FAQ</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link underline" href="blog.html">Blog</a>
+        </li>
+      </ul>
     </nav>
   </header>
   <main>
@@ -38,7 +39,7 @@
       <div class="container">
         <div class="row">
           <div class="col-6">
-            <h1 class="display-1 py-5" id="name">Valeria Stamenova</h1>
+            <h1 class="display-1 py-5 darkest-text" id="name">My profile page</h1>
           </div>
           <div class="col-6">
             <img id="profile-picture" src="images/new-picture.png" alt="Profile picture">
@@ -46,45 +47,36 @@
         </div>
       </div>
     </article>
-    <section class="jumbotron jumbotron-fluid aero-bg text-white">
+    <section class="jumbotron jumbotron-fluid aero-bg text-white no-bottom-margin">
       <div class="container">
         <div class="row py-2">
-          <div class="col">
-            <h3 class="display-4">Personal information</h1>
-            <div class="row my-4">
-              <div class="col-5">
-                  <h5>Name:</h5>
-                  <h5>Age:</h5>
-                  <h5>Previous education:</h5>
+          <div class="col-6">
+            <h3 class="display-4">Personal information</h3>
+              <div class="row my-4">
+                <div class="col-4">
+                  <h4 class="py-1">Name:</h4>
+                  <h4 class="py-1">Age:</h4>
+                  <h4 class="py-1">Previous education:</h4>
+                </div>
+                <div class="col">
+                  <h4 class="py-1">Valeria Mincheva Stamenova</h4>
+                  <h4 class="py-1">18</h4>
+                  <h4 class="py-1">2017-2022 - Subjects: CS, ICT, Math</h4>
+                  <h4 class="py-1">2014-2017 - Subject: Math</h4>
+                  <h4 class="py-1">2010-2014 - Primary education</h4>
+                </div>
               </div>
-              <div class="col">
-                  <h5>Valeria Mincheva Stamenova</h5> 
-                  <h5>18</h5>
-                  <h5>2017-2022 - CS, ICT, Math</h5>
-                  <h5>2014-2017 - Math</h5>
-              </div>
-            </div>
           </div>
-          <div class="col">
-            <h3 class="display-4">Extra-curricular activities</h1>
-              <h5>Playing the Ukulele</h5>
-              <h5>Studying Philosophy</h5>
-              <h5>Coding</h5>
-              <h5>Playing the Ukulele</h5>
-              <h5>Studying Philosophy</h5>
-              <h5>Coding</h5>
-              <h5>Playing the Ukulele</h5>
-              <h5>Studying Philosophy</h5>
-              <h5>Coding</h5>
-              <h5>Playing the Ukulele</h5>
-              <h5>Studying Philosophy</h5>
-              <h5>Coding</h5>
-              <h5>Playing the Ukulele</h5>
-              <h5>Studying Philosophy</h5>
-              <h5>Coding</h5>
-              <h5>Playing the Ukulele</h5>
-              <h5>Studying Philosophy</h5>
-              <h5>Coding</h5>
+          <div class="col-1"></div>
+          <div class="col-5">
+            <h3 class="display-4">Extra-curricular activities</h3>
+              <div class="row my-4">
+                <div class="col">
+                  <h4 class="py-1">Playing the Ukulele <i class="bi bi-music-note-beamed"></i></h4>
+                  <h4 class="py-1">Studying Philosophy <i class="bi bi-book"></i></h4>
+                  <h4 class="py-1">Coding <i class="bi bi-code-slash"></i></h4>
+                </div>
+              </div>
           </div>
         </div>
       </div>
