@@ -1,58 +1,51 @@
+/*Importing fonts from google fonts*/
 @import url('https://fonts.googleapis.com/css2?family=Lora&family=Open+Sans&display=swap');
 
-:root{
+/*Adding common colors to the root*/
+:root {
     --champagne: rgb(244, 242, 232);
     --space-cadet: #002D62;
     --darkest: #00162d;
     --aero: #6BBAEC;
 }
 
-.main-banner{
+/*Backgrounds*/
+.main-banner {
     background-color: var(--champagne) !important;
     font-family: 'Lora', serif;
     padding-bottom: 0 !important;
 }
 
-.aero-bg{
-    background-color:  var(--space-cadet) !important;
+.aero-bg {
+    background-color: var(--space-cadet) !important;
     font-family: 'Lora', serif;
 }
 
-.light-blue-bg{
-    background-color:  var(--aero) !important;
+.light-blue-bg {
+    background-color: var(--aero) !important;
     font-family: 'Lora', serif;
 }
 
-.light-blue-bg p{
+.light-blue-bg p {
     font-size: 21px;
     color: var(--darkest)
 }
 
-.champ-bg{
+.champ-bg {
     background-color: var(--champagne) !important;
 }
 
-.darkest-text{
+/*Text colors*/
+.darkest-text {
     color: var(--darkest) !important;
 }
 
-.space-text{
+.space-text {
     color: var(--space-cadet) !important;
 }
 
-footer{
-    background-color: var(--darkest);
-    position:sticky;
-    padding: 0.001rem;
-    font-family: 'Lora', serif;
-}
-
-#profile-picture{
-    height: 45vw;
-    z-index: -1 !important;
-}
-
-header{
+/*Header and navigation*/
+header {
     z-index: 300 !important;
     position: fixed;
     top: 0;
@@ -60,38 +53,76 @@ header{
     width: 100%;
 }
 
-nav{
+nav {
     position: fixed !important;
     top: 0 !important;
     width: 100%;
     background-color: white;
 }
 
-.personal-details label,
-.personal-details p{
-    display: inline;
-    font-size: 25px;
-}
-
-.personal-details p{
-    margin-left: 10px;
-}
-
 .nav-link:hover {
     color: var(--space-cadet) !important;
 }
 
-.no-bottom-margin{
+/*Footer*/
+footer {
+    background-color: var(--darkest);
+    position: sticky;
+    padding: 0.001rem;
+    font-family: 'Lora', serif;
+}
+
+.footer-menu {
+    padding-top: 4rem;
+}
+
+/*Profile page*/
+#profile-picture {
+    height: 45vw;
+    z-index: -1 !important;
+}
+
+.personal-details label,
+.personal-details p {
+    display: inline;
+    font-size: 25px;
+}
+
+.personal-details p {
+    margin-left: 10px;
+}
+
+
+/*Spaces*/
+
+.no-bottom-margin {
     margin-bottom: 0 !important;
 }
 
+.big-padding-top {
+    padding-top: 5rem;
+}
+
+.div-pic {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+#dashboard {
+    border-top: none !important;
+}
+
+/*Underlines*/
 .underline {
     display: inline-block;
     position: relative;
     color: var(--space-cadet);
-  }
-  
-  .underline:after {
+}
+
+.underline:after
+
+/*dark underline animation 1)*/
+    {
     content: '';
     position: absolute;
     width: 100%;
@@ -102,20 +133,26 @@ nav{
     background-color: var(--space-cadet);
     transform-origin: bottom right;
     transition: transform 0.25s ease-out;
-  }
-  
-  .underline:hover:after {
+}
+
+.underline:hover:after
+
+/*dark underline animation 2)*/
+    {
     transform: scaleX(1);
     transform-origin: bottom left;
-  }
+}
 
-  .underline-light {
+.underline-light {
     display: inline-block;
     position: relative;
     color: var(--champagne);
-  }
-  
-  .underline-light:after {
+}
+
+.underline-light:after
+
+/*light underline animation 1)*/
+    {
     content: '';
     position: absolute;
     width: 100%;
@@ -126,77 +163,74 @@ nav{
     background-color: var(--champagne);
     transform-origin: bottom right;
     transition: transform 0.25s ease-out;
-  }
-  
-  .underline-light:hover:after {
+}
+
+.underline-light:hover:after
+
+/*light underline animation 2)*/
+    {
     transform: scaleX(1);
     transform-origin: bottom left;
-  }
-  .big-padding-top{
-    padding-top: 5rem;
-  }
+}
 
-  .list-group-item-champ{
+/*Lists*/
+
+.list-group-item-champ {
     background-color: var(--champagne) !important;
     font-size: 19px;
-  }
+}
 
-  .list-group-item-space{
+.list-group-item-space {
     background-color: var(--space-cadet) !important;
     font-size: 19px;
-  }
+}
 
-  .no-link-feature:hover{
+/*Links*/
+.no-link-feature:hover {
     text-decoration: none !important;
     color: var(--space-cadet) !important;
     font-family: 'Lora', serif;
-  }
+}
 
-.light-link{
+.light-link {
     color: var(--champagne) !important;
 }
 
-.light-link:hover{
+.light-link:hover {
     color: white !important;
 }
 
-#banner{
+/*Home page*/
+#banner {
     padding-top: 0;
 }
 
-article#banner{
+article#banner {
     background-image: url('/images/banner-b.png') !important;
 }
 
-.div-pic{
-    max-width: 100%;
-    max-height: 100%;
-}
-
-.med-par{
+/*Font sizes and colors*/
+.med-par {
     font-size: 20px;
 }
 
-details{
+details {
     font-size: 23px;
 }
 
-details p{
+details p {
     color: var(--space-cadet)
 }
 
-.rounded-corners{
-    border-radius: 25px;
-}
-
-#dashboard{
-    border-top: none !important;
-}
-
-.blog p{
+.blog p {
     font-size: 23px;
 }
 
-.subheading{
+.subheading {
     text-decoration: underline;
+}
+
+/*Corners*/
+.rounded-corners {
+    border-radius: 25px;
 }
