@@ -184,3 +184,7 @@ details p{
 .rounded-corners{
     border-radius: 25px;
 }
+
+#dashboard{
+    border-top: none !important;
+}
