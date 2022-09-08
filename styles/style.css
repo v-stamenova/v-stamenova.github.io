@@ -172,3 +172,15 @@ article#banner{
 .med-par{
     font-size: 20px;
 }
+
+details{
+    font-size: 23px;
+}
+
+details p{
+    color: var(--space-cadet)
+}
+
+.rounded-corners{
+    border-radius: 25px;
+}

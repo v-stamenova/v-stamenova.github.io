@@ -5,36 +5,142 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <title>Dashboard</title>
 </head>
 
 <body class="aero-bg">
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="profile.html">Profile</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="dashboard.html">Dashboard</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="faq.html">FAQ</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="blog.html">Blog</a>
-                    </li>
-                </ul>
-            </div>
+    <header class="sticky">
+        <nav class="navbar sticky navbar-expand-lg navbar-light bg-light justify-content-end">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link underline" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link underline" href="profile.html">Profile</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="dashboard.html">Dashboard</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link underline" href="faq.html">FAQ</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link underline" href="blog.html">Blog</a>
+                </li>
+            </ul>
         </nav>
     </header>
+    <main>
+        <section class="jumbotron jumbotron-fluid main-banner">
+            <div class="container">
+                <div class="row">
+                    <div class="col-3 big-padding-top">
+                        <h1 class="display-1 darkest-text big-padding-top" id="name">Dashboard</h1>
+                    </div>
+                    <div class="col-3"></div>
+                    <div class="col-6">
+                        <img class="div-pic" src="images/board.png" alt="FD picture">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="jumbotron jumbotron-fluid aero-bg">
+            <div class="container">
+                <div class="row">
+                   <div class="col">
+                    <table class="table table-striped champ-bg">
+                        <thead>
+                          <tr>
+                            <th scope="col">Quartile</th>
+                            <th scope="col">Course</th>
+                            <th scope="col">Exam</th>
+                            <th scope="col">Credits</th>
+                            <th scope="col">Grade</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row">1</th>
+                            <td>Program- & Career Orientation (PCO)</td>
+                            <td>Verbal, Written, Other, Individual</td>
+                            <td>2.5</td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <th scope="row">1</th>
+                            <td>Computer Science Basics (CSB)</td>
+                            <td>Written, Individual</td>
+                            <td>5</td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <th scope="row">1</th>
+                            <td>Programming Basics (PBA) y</td>
+                            <td>Written, Individual</td>
+                            <td>5</td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <th scope="row">1</th>
+                            <td>IT Personality Project Week 1 (PPW1)</td>
+                            <td>Written, Other, Individual</td>
+                            <td>1.25</td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <th scope="row">2</th>
+                            <td>Object-Oriented programming (OOP)</td>
+                            <td>Written, Other, Individual</td>
+                            <td>1.25</td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <th scope="row">1</th>
+                            <td>IT Personality Project Week 1 (PPW1)</td>
+                            <td>Written, Other, Individual</td>
+                            <td>1.25</td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <th scope="row">1</th>
+                            <td>IT Personality Project Week 1 (PPW1)</td>
+                            <td>Written, Other, Individual</td>
+                            <td>1.25</td>
+                            <td></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                   </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-5">
+                    <p class="py-4 text-white">VS © 2022</p>
+                </div>
+                <div class="col py-4 justify-content-end">
+                    <a class="no-link-feature px-2 light-link underline-light" target="_blank"
+                        href="/resources/CER-HZ-Bachelor-full-time-2022-2023-DEF-June-13.pdf">HZ HBO-ICT CER</a>
+                    <a class="no-link-feature px-2 light-link underline-light" target="_blank"
+                        href="/resources/IR-CER-HZ-B-HBO-ICT-full-time-2022-2023-DEF.pdf">HZ HBO-ICT IR</a>
+                    <a class="no-link-feature px-2 light-link underline-light" target="_blank"
+                        href="https://learn.hz.nl/course/view.php?id=23602#section-1">Learn</a>
+                    <a class="no-link-feature px-2 light-link underline-light" target="_blank"
+                        href="https://www.microsoft.com/en-us/microsoft-teams/group-chat-software">Teams</a>
+                    <a class="no-link-feature px-2 light-link underline-light" target="_blank"
+                        href="https://hz.osiris-student.nl/">MyHZ progress</a>
+                    <a class="no-link-feature px-2 light-link underline-light" target="_blank"
+                        href="https://github.com/v-stamenova">GitHub</a>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
