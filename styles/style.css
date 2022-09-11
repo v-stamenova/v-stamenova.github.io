@@ -234,3 +234,7 @@ details p {
 .rounded-corners {
     border-radius: 25px;
 }
+
+.no-top-border{
+    border-top-width: 0 !important;
+}
