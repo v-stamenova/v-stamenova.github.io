@@ -10,7 +10,7 @@
 }
 
 /*Backgrounds*/
-.dark-champ-bg{
+.dark-champ-bg {
     background-color: #E8E6DC;
 }
 
@@ -244,6 +244,18 @@ details p {
     border-radius: 25px;
 }
 
-.no-top-border{
+.no-top-border {
     border-top-width: 0 !important;
+}
+
+/*Icons*/
+
+.icon-link {
+    font-size: 50px;
+    color: var(--space-cadet)
+}
+
+
+.icon-link:hover {
+    color: var(--darkest)
 }
