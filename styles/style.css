@@ -10,6 +10,10 @@
 }
 
 /*Backgrounds*/
+.dark-champ-bg{
+    background-color: #E8E6DC;
+}
+
 .main-banner {
     background-color: var(--champagne) !important;
     font-family: 'Lora', serif;
@@ -42,6 +46,10 @@
 
 .space-text {
     color: var(--space-cadet) !important;
+}
+
+.champ-text {
+    color: var(--champagne) !important;
 }
 
 /*Header and navigation*/
@@ -206,7 +214,8 @@ footer {
 }
 
 article#banner {
-    background-image: url('/images/banner-b.png') !important;
+    background-image: url('/images/hz-building.jpg') !important;
+    background-size: cover;
 }
 
 /*Font sizes and colors*/
