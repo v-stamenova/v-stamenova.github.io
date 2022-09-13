@@ -279,3 +279,28 @@ details p {
 #end-point {
     margin-left: 90%;
 }
+
+/*Responsiveness*/
+@media only screen and (max-width: 1195px) {
+    #profile-column {
+        display: none;
+    }
+
+    #end-point{
+        margin-left: 85% !important;
+    }
+
+    #border-point {
+        margin-left: 70%;
+    }
+
+    .hidden{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    #end-point{
+        margin-left: 75% !important;
+    }
+}
