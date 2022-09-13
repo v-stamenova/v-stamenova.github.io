@@ -8,6 +8,8 @@
     --darkest: #00162d;
     --aero: #6BBAEC;
     --dark-champ: #E8E6DC;
+    --passed: #006D77;
+    --failed: #ce5374;
 }
 
 /*Backgrounds*/
@@ -40,6 +42,15 @@
     background-color: var(--champagne) !important;
 }
 
+.passed-bg{
+    background-color: var(--passed);
+    color: var(--champagne);
+}
+
+.failed-bg{
+    background-color: var(--failed);
+}
+
 /*Text colors*/
 .darkest-text {
     color: var(--darkest) !important;
@@ -51,6 +62,18 @@
 
 .champ-text {
     color: var(--champagne) !important;
+}
+
+.dark-champ-text {
+    color: var(--dark-champ) !important;
+}
+
+.passed-text{
+    color: var(--passed);
+}
+
+.failed-text{
+    color: var(--failed);
 }
 
 /*Header and navigation*/
@@ -304,3 +327,13 @@ details p {
         margin-left: 75% !important;
     }
 }
+
+dl
+{
+    width: 100%;
+ }
+
+ dt, dd
+ {
+    display: inline;
+ } 

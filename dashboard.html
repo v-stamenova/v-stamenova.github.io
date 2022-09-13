@@ -10,6 +10,7 @@
   <script src="/scripts/script.js"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
     crossorigin="anonymous"></script>
@@ -68,11 +69,14 @@
       <div class="container">
         <div class="row">
           <div class="col">
-            <h5 class="champ-text"><span>0 EC</span><span id="end-point">60 EC</span></h5>
-            <div id="myProgress">
-              <div id="myBar"></div>
+            <div id="progress">
+              <h2 class="champ-text pb-3">Progress bar</h2>
+              <h5 class="champ-text"><span>0 EC</span><span id="end-point">60 EC</span></h5>
+              <div id="myProgress">
+                <div id="myBar"></div>
+              </div>
+              <h5 id="border-point" class="champ-text">45 EC*</h5>
             </div>
-            <h5 id="border-point" class="champ-text">45 EC</h5>
             <h2 class="champ-text py-3">Quartile 1 - Computer Science</h2>
             <table class="table table-striped champ-bg rounded-corners">
               <thead>
@@ -228,6 +232,22 @@
               </tbody>
             </table>
           </div>
+        </div>
+        <div class="row pt-4 pl-3">
+          <h2 class="champ-text pb-3">Agenda</h2>
+          <dl class="champ-text med-par">
+            <dt><i class="bi bi-square-fill passed-text"></i></dt>
+            <dd class="pr-4"> - Passed </dd>
+
+            <dt><i class="bi bi-square-fill failed-text"></i></dt>
+            <dd class="pr-4"> - Failed </dd>
+
+            <dt><i class="bi bi-square-fill champ-text"></i><i class="bi bi-square-fill pl-2 dark-champ-text"></i></dt>
+            <dd class="pr-4"> - Upcoming</dd>
+
+            <dt>*</dt>
+            <dd> - NBSA Border (45 EC) </dd>
+          </dl>
         </div>
       </div>
     </section>
