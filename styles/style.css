@@ -7,11 +7,12 @@
     --space-cadet: #002D62;
     --darkest: #00162d;
     --aero: #6BBAEC;
+    --dark-champ: #E8E6DC;
 }
 
 /*Backgrounds*/
 .dark-champ-bg {
-    background-color: #E8E6DC;
+    background-color: var(--dark-champ);
 }
 
 .main-banner {
@@ -249,7 +250,6 @@ details p {
 }
 
 /*Icons*/
-
 .icon-link {
     font-size: 50px;
     color: var(--space-cadet)
@@ -258,4 +258,24 @@ details p {
 
 .icon-link:hover {
     color: var(--darkest)
+}
+
+/*Progress bar*/
+#myProgress {
+    width: 100%;
+    background-color: var(--dark-champ);
+}
+
+#myBar {
+    width: 1%;
+    height: 30px;
+    background-color: var(--aero);
+}
+
+#border-point {
+    margin-left: 73%;
+}
+
+#end-point {
+    margin-left: 90%;
 }

@@ -12,7 +12,7 @@
   <title>Dashboard</title>
 </head>
 
-<body class="aero-bg">
+<body class="aero-bg" onload="calculateTotalCredits()">
   <header class="sticky">
     <nav class="navbar sticky navbar-expand-lg navbar-light bg-light justify-content-end">
       <ul class="navbar-nav">
@@ -52,8 +52,11 @@
       <div class="container">
         <div class="row">
           <div class="col">
-            <h2 style="color: rgb(199, 0, 0);">NBSA border - 45 EC</h2>
-            
+            <h5 class="champ-text"><span>0 EC</span><span id="end-point">60 EC</span></h5>
+            <div id="myProgress">
+              <div id="myBar"></div>
+            </div>
+            <h5 id="border-point" class="champ-text">45 EC</h5>
             <h2 class="champ-text py-3">Quartile 1 - Computer Science</h2>
             <table class="table table-striped champ-bg rounded-corners">
               <thead>
@@ -70,32 +73,32 @@
                   <td>Assessment website
                     (Individual process
                     assessment)</td>
-                  <td>2.5</td>
-                  <td></td>
+                  <td id="credits-1">2.5</td>
+                  <td id="grade-1"></td>
                 </tr>
                 <tr>
                   <td>Computer Science Basics (CSB)</td>
                   <td>Written knowledge test</td>
-                  <td>5</td>
-                  <td></td>
+                  <td id="credits-2">5</td>
+                  <td id="grade-2"></td>
                 </tr>
                 <tr>
                   <td>Programming Basics (PBA)</td>
                   <td>Case study exam</td>
-                  <td>5</td>
-                  <td></td>
+                  <td id="credits-3">5</td>
+                  <td id="grade-3"></td>
                 </tr>
                 <tr>
                   <td>IT Personality Project Week 1 (PPW1)</td>
                   <td>Portfolio</td>
-                  <td>1.25</td>
-                  <td></td>
+                  <td id="credits-4">1.25</td>
+                  <td id="grade-4"></td>
                 </tr>
                 <tr>
                   <td>IT Personality 1 (ITP1)</td>
                   <td>Portfolio</td>
-                  <td>1.25</td>
-                  <td></td>
+                  <td id="credits-5">1.25</td>
+                  <td id="grade-5"></td>
                 </tr>
               </tbody>
             </table>
@@ -117,12 +120,12 @@
                 <tr>
                   <td rowspan="2"> Object-Oriented programming (OOP)</td>
                   <td>Presentation</td>
-                  <td rowspan="2">5</td>
-                  <td></td>
+                  <td id="credits-6" rowspan="2">10</td>
+                  <td id="grade-6.1"></td>
                 </tr>
                 <tr>
                   <td>Case study exam </td>
-                  <td></td>
+                  <td id="grade-6.2"></td>
                 </tr>
               </tbody>
             </table>
@@ -144,23 +147,23 @@
                 <tr>
                   <td>Framework Development 1 (FDE1) </td>
                   <td>Case study exam</td>
-                  <td>5</td>
-                  <td></td>
+                  <td id="credits-7">5</td>
+                  <td id="grade-7"></td>
                 </tr>
                 <tr class="dark-champ-bg">
                   <td rowspan="3">Framework Project 1 (FPR1)</td>
                   <td> Criterium based
                     interview </td>
-                  <td rowspan="3">7.5</td>
-                  <td></td>
+                  <td id="credits-8" rowspan="3">7.5</td>
+                  <td id="grade-8.1"></td>
                 </tr>
                 <tr class="dark-champ-bg">
                   <td>Assignment</td>
-                  <td></td>
+                  <td id="grade-8.2"></td>
                 </tr>
                 <tr class="dark-champ-bg">
                   <td>Case study exam</td>
-                  <td></td>
+                  <td id="grade-8.3"></td>
                 </tr>
               </tbody>
             </table>
@@ -182,41 +185,29 @@
                 <tr>
                   <td rowspan="3">Framework Project 2 (FPR2)</td>
                   <td>Final delivery</td>
-                  <td rowspan="3">10</td>
-                  <td></td>
+                  <td id="credits-9" rowspan="3">10</td>
+                  <td id="grade-9.1"></td>
                 </tr>
                 <tr>
                   <td>Report of acceptance tests
                     and optional assessments</td>
-                  <td></td>
+                  <td id="grade-9.2"></td>
                 </tr>
                 <tr>
                   <td>IT Development portfolio</td>
-                  <td></td>
-                </tr>
-                <tr class="dark-champ-bg">
-                  <td>IT Personality International week (PIW) </td>
-                  <td>Portfolio</td>
-                  <td>1.25</td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <td>IT Personality 2 (ITP2) </td>
-                  <td>Portfolio</td>
-                  <td>1.25</td>
-                  <td></td>
+                  <td id="grade-9.3"></td>
                 </tr>
                 <tr class="dark-champ-bg">
                   <td rowspan="2"> Personal Professional Development: Exploration (PPD-E)
                     (INT Class)</td>
                   <td>English Test</td>
-                  <td rowspan="2">12.5</td>
-                  <td></td>
+                  <td rowspan="2" id="credits-10">12.5</td>
+                  <td id="grade-10.1"></td>
                 </tr>
-                <tr>
+                <tr class="dark-champ">
                   <td class="dark-champ-bg">Criterium focused
                     interview</td>
-                  <td class="dark-champ-bg"></td>
+                  <td class="dark-champ-bg" id="grade-10.2"></td>
                 </tr>
               </tbody>
             </table>
@@ -251,3 +242,80 @@
 </body>
 
 </html>
+
+<script>
+  var i = 0;
+  let passing = 5.5;
+  let collectedCredits = 0.0;
+
+  function calculateTotalCredits() {
+    let totalCredits = 60;
+
+    let gradeId = "grade-";
+    let creditsId = "credits-";
+
+    for (let i = 1; i < 11; i++) {
+
+      let grade = 0.0;
+
+      if (i == 6 || i == 10 || i == 8 || i == 9) {
+
+        let sumGrades = 0.0;
+        let additional = 1;
+
+        if (i == 8 || i == 9) {
+          additional++;
+        }
+
+        for (let j = 1; j < 2 + additional; j++) {
+          sumGrades += Number(document.getElementById(gradeId + i + "." + j).textContent);
+        }
+
+        if (isExamPassed(sumGrades / 2)) {
+          collectedCredits += Number(document.getElementById(creditsId + i).textContent);
+        }
+      }
+      else {
+        grade = document.getElementById(gradeId + i).textContent;
+
+        if (isExamPassed(grade)) {
+          collectedCredits += Number(document.getElementById(creditsId + i).textContent);
+        }
+      }
+
+    }
+
+    move();
+  }
+
+  function isExamPassed(grade) {
+    if (grade) {
+      if (grade >= passing) {
+        return true;
+      }
+    }
+
+    return false;
+  }
+
+  function move() {
+    let percent = (100.0 / 60.0 * collectedCredits);
+
+    if (i == 0) {
+      i = 1;
+      var elem = document.getElementById("myBar");
+      var width = 1;
+      var id = setInterval(frame, 10);
+
+      function frame() {
+        if (width >= percent) {
+          clearInterval(id);
+          i = 0;
+        } else {
+          width++;
+          elem.style.width = width + "%";
+        }
+      }
+    }
+  }
+</script>
