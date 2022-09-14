@@ -1,7 +1,9 @@
 let i = 0;
-let passing = 5.5;
+const passingThreshold = 5.5;
 let collectedCredits = 0.0;
 const gradePartialText = "grade-";
+const passColor = "#006D77";
+const failColor = "#ce5374";
 
 function calculateTotalCredits() {
     let totalCredits = 60;
@@ -52,39 +54,33 @@ function calculateTotalCredits() {
 
 function colorCells(grade, index, cellCount) {
     if (grade) {
-        if (grade >= passing) {
+        if (grade >= passingThreshold) {
             if (cellCount > 1) {
-                alert("so far so good");
-
                 for (let i = 1; i < cellCount + 1; i++) {
-                    document.getElementById(gradePartialText + index + "." + i).style.backgroundColor = "#006D77";
+                    document.getElementById(gradePartialText + index + "." + i).style.backgroundColor = passColor;
+                    document.getElementById(gradePartialText + index + "." + i).style.color = "white";
                 }
             }
             else {
-                document.getElementById(gradePartialText + index).style.backgroundColor = "#006D77";
+                document.getElementById(gradePartialText + index).style.backgroundColor = passColor;
+                document.getElementById(gradePartialText + index).style.color = "white";
             }
         }
         else {
             if (cellCount > 1) {
                 for (let i = 1; i < cellCount + 1; i++) {
-                    document.getElementById(gradePartialText + index + "." + i).style.backgroundColor = "#ce5374";
+                    document.getElementById(gradePartialText + index + "." + i).style.backgroundColor = failColor;
                 }
             }
             else {
-                document.getElementById(gradePartialText + index).style.backgroundColor = "#ce5374";
+                document.getElementById(gradePartialText + index).style.backgroundColor = failColor;
             }
         }
     }
 }
 
 function isExamPassed(grade) {
-    if (grade) {
-        if (grade >= passing) {
-            return true;
-        }
-    }
-
-    return false;
+    return grade && grade >= passingThreshold
 }
 
 function move() {

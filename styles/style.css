@@ -276,6 +276,14 @@ details p {
     border-top-width: 0 !important;
 }
 
+.rounded-corner-right {
+    border-radius: 0 0 25px 0px !important;
+}
+
+.rounded-corner-left {
+    border-radius: 0 0 0 25px !important;
+}
+
 /*Icons*/
 .icon-link {
     font-size: 50px;
@@ -340,12 +348,4 @@ dl {
 dt,
 dd {
     display: inline;
-}
-
-.rounded-corner-right{
-    border-radius: 0 0 25px 0px !important;
-}
-
-.rounded-corner-left{
-    border-radius: 0 0 0 25px !important;
 }
