@@ -1,12 +1,12 @@
 let i = 0;
 let passing = 5.5;
 let collectedCredits = 0.0;
-let gradeId = "grade-";
+const gradeId = "grade-";
 
 function calculateTotalCredits() {
     let totalCredits = 60;
 
-    let creditsId = "credits-";
+    const creditsId = "credits-";
 
     for (let i = 1; i < 11; i++) {
 
