@@ -1,12 +1,12 @@
 let i = 0;
 let passing = 5.5;
 let collectedCredits = 0.0;
-const gradeId = "grade-";
+const gradePartialText = "grade-";
 
 function calculateTotalCredits() {
     let totalCredits = 60;
 
-    const creditsId = "credits-";
+    const creditsPartialText = "credits-";
 
     for (let i = 1; i < 11; i++) {
 
@@ -22,7 +22,7 @@ function calculateTotalCredits() {
             }
 
             for (let j = 1; j < 2 + additional; j++) {
-                sumGrades += Number(document.getElementById(gradeId + i + "." + j).textContent);
+                sumGrades += Number(document.getElementById(gradePartialText + i + "." + j).textContent);
             }
 
             if (i == 8 || i == 9) {
@@ -33,15 +33,15 @@ function calculateTotalCredits() {
             }
 
             if (isExamPassed(sumGrades / (2 + additional))) {
-                collectedCredits += Number(document.getElementById(creditsId + i).textContent);
+                collectedCredits += Number(document.getElementById(creditsPartialText + i).textContent);
             }
             colorCells(sumGrades / (2 + additional), i, 2 + additional);
         }
         else {
-            grade = document.getElementById(gradeId + i).textContent;
+            grade = document.getElementById(gradePartialText + i).textContent;
 
             if (isExamPassed(grade)) {
-                collectedCredits += Number(document.getElementById(creditsId + i).textContent);
+                collectedCredits += Number(document.getElementById(creditsPartialText + i).textContent);
             }
             colorCells(grade, i, 1);
         }
@@ -57,21 +57,21 @@ function colorCells(grade, index, cellCount) {
                 alert("so far so good");
 
                 for (let i = 1; i < cellCount + 1; i++) {
-                    document.getElementById(gradeId + index + "." + i).style.backgroundColor = "#006D77";
+                    document.getElementById(gradePartialText + index + "." + i).style.backgroundColor = "#006D77";
                 }
             }
             else {
-                document.getElementById(gradeId + index).style.backgroundColor = "#006D77";
+                document.getElementById(gradePartialText + index).style.backgroundColor = "#006D77";
             }
         }
         else {
             if (cellCount > 1) {
                 for (let i = 1; i < cellCount + 1; i++) {
-                    document.getElementById(gradeId + index + "." + i).style.backgroundColor = "#ce5374";
+                    document.getElementById(gradePartialText + index + "." + i).style.backgroundColor = "#ce5374";
                 }
             }
             else {
-                document.getElementById(gradeId + index).style.backgroundColor = "#ce5374";
+                document.getElementById(gradePartialText + index).style.backgroundColor = "#ce5374";
             }
         }
     }
