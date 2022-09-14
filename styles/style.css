@@ -341,3 +341,11 @@ dt,
 dd {
     display: inline;
 }
+
+.rounded-corner-right{
+    border-radius: 0 0 25px 0px !important;
+}
+
+.rounded-corner-left{
+    border-radius: 0 0 0 25px !important;
+}
