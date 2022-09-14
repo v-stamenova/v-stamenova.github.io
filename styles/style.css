@@ -42,12 +42,12 @@
     background-color: var(--champagne) !important;
 }
 
-.passed-bg{
+.passed-bg {
     background-color: var(--passed);
     color: var(--champagne);
 }
 
-.failed-bg{
+.failed-bg {
     background-color: var(--failed);
 }
 
@@ -68,12 +68,16 @@
     color: var(--dark-champ) !important;
 }
 
-.passed-text{
+.passed-text {
     color: var(--passed);
 }
 
-.failed-text{
+.failed-text {
     color: var(--failed);
+}
+
+.aero-text {
+    color: var(--aero);
 }
 
 /*Header and navigation*/
@@ -309,7 +313,7 @@ details p {
         display: none;
     }
 
-    #end-point{
+    #end-point {
         margin-left: 85% !important;
     }
 
@@ -317,23 +321,23 @@ details p {
         margin-left: 70%;
     }
 
-    .hidden{
+    .hidden {
         display: none;
     }
 }
 
 @media only screen and (max-width: 750px) {
-    #end-point{
+    #end-point {
         margin-left: 75% !important;
     }
 }
 
-dl
-{
+/* Description list */
+dl {
     width: 100%;
- }
+}
 
- dt, dd
- {
+dt,
+dd {
     display: inline;
- } 
+}
