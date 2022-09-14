@@ -340,6 +340,12 @@ details p {
     }
 }
 
+@media only screen and (max-width: 500px) {
+    .scale-down{
+        font-size: 4.5rem !important;
+    }
+}
+
 /* Description list */
 dl {
     width: 100%;
