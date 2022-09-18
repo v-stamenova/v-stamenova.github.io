@@ -128,6 +128,9 @@ footer {
     margin-left: 10px;
 }
 
+#collage-pic {
+    width: 40vw;
+}
 
 /*Spaces*/
 
@@ -338,10 +341,21 @@ details p {
     #end-point {
         margin-left: 75% !important;
     }
+
+    #collage-pic {
+        width: 85vw;
+    }
 }
 
+@media only screen and (max-width: 550px) {
+    #collage-pic {
+        width: 95vw;
+    }
+}
+
+
 @media only screen and (max-width: 500px) {
-    .scale-down{
+    .scale-down {
         font-size: 4.5rem !important;
     }
 }
