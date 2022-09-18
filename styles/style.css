@@ -10,6 +10,7 @@
     --dark-champ: #E8E6DC;
     --passed: #006D77;
     --failed: #ce5374;
+    --light-aero: #a5dcff;
 }
 
 /*Backgrounds*/
@@ -36,6 +37,11 @@
 .light-blue-bg p {
     font-size: 21px;
     color: var(--darkest)
+}
+
+.light-aero-bg{
+    background-color: var(--light-aero) !important;
+    font-size: 21px;
 }
 
 .champ-bg {
