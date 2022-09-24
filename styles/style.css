@@ -375,3 +375,8 @@ dt,
 dd {
     display: inline;
 }
+
+/* Sticky banner */
+.sticky-banner{
+    z-index: 1 !important;
+}
