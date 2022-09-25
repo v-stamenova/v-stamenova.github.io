@@ -22,6 +22,15 @@
     background-color: var(--champagne) !important;
     font-family: 'Lora', serif;
     padding-bottom: 0 !important;
+    height: 75vh;
+}
+
+.blog-banner{
+    background-color: var(--champagne) !important;
+    font-family: 'Lora', serif;
+    padding-bottom: 0 !important;
+    height:25vh;
+    border-bottom: 5px solid var(--space-cadet);
 }
 
 .aero-bg {
@@ -37,6 +46,10 @@
 .light-blue-bg p {
     font-size: 21px;
     color: var(--darkest)
+}
+
+.three-quoters{
+    height: 75vh;
 }
 
 .light-aero-bg{
@@ -120,7 +133,7 @@ footer {
 
 /*Profile page*/
 #profile-picture {
-    height: 45vw;
+    height: 67.5vh;
     z-index: -1 !important;
 }
 
@@ -350,6 +363,10 @@ details p {
 
     #collage-pic {
         width: 85vw;
+    }
+
+    .main-banner{
+        height: auto;
     }
 }
 
