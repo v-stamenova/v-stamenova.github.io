@@ -70,10 +70,12 @@ function colorCells(grade, index, cellCount) {
             if (cellCount > 1) {
                 for (let i = 1; i < cellCount + 1; i++) {
                     document.getElementById(gradePartialText + index + "." + i).style.backgroundColor = failColor;
+                    document.getElementById(gradePartialText + index + "." + i).style.color = "white";
                 }
             }
             else {
                 document.getElementById(gradePartialText + index).style.backgroundColor = failColor;
+                document.getElementById(gradePartialText + index + "." + i).style.color = "white";
             }
         }
     }
