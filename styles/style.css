@@ -361,18 +361,8 @@ details p {
         margin-left: 75% !important;
     }
 
-    #collage-pic {
-        width: 85vw;
-    }
-
     .main-banner{
         height: auto;
-    }
-}
-
-@media only screen and (max-width: 550px) {
-    #collage-pic {
-        width: 95vw;
     }
 }
 
