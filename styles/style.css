@@ -25,11 +25,11 @@
     height: 75vh;
 }
 
-.blog-banner{
+.blog-banner {
     background-color: var(--champagne) !important;
     font-family: 'Lora', serif;
     padding-bottom: 0 !important;
-    height:25vh;
+    height: 25vh;
     border-bottom: 5px solid var(--space-cadet);
 }
 
@@ -48,11 +48,11 @@
     color: var(--darkest)
 }
 
-.three-quoters{
+.three-quoters {
     height: 75vh;
 }
 
-.light-aero-bg{
+.light-aero-bg {
     background-color: var(--light-aero) !important;
     font-size: 21px;
 }
@@ -273,6 +273,11 @@ article#banner {
     font-size: 20px;
 }
 
+.small-heading {
+    font-size: 2.5rem;
+}
+
+
 details {
     font-size: 23px;
 }
@@ -361,7 +366,7 @@ details p {
         margin-left: 75% !important;
     }
 
-    .main-banner{
+    .main-banner {
         height: auto;
     }
 }
@@ -384,6 +389,6 @@ dd {
 }
 
 /* Sticky banner */
-.sticky-banner{
+.sticky-banner {
     z-index: 1 !important;
 }
