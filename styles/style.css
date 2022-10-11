@@ -392,3 +392,8 @@ dd {
 .sticky-banner {
     z-index: 1 !important;
 }
+
+/* Strikethrough */
+.strikediag {
+    background: linear-gradient(to left top, transparent 47.75%, var(--failed) 46.5%, var(--failed) 53.5%, transparent 52.25%);
+}
